@@ -1,0 +1,26 @@
+{
+  "name": "scatterd3chart",
+  "version": "1.0.0",
+  "description": "A scatter plot showing flower data",
+  "main": "build/bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nick Stebb",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^16.0.0",
+    "d3.chart": "^0.3.0",
+    "grunt": "^1.3.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-eslint": "0.0.5",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-rollup": "^11.5.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  },
+  "dependencies": {
+    "d3": "^6.2.0",
+    "d3-svg-legend": "^2.25.6",
+    "gruntify-eslint": "^5.0.0"
+  }
+}

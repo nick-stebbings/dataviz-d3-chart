@@ -1,0 +1,79 @@
+@import 'colours.less';
+@font-face {
+  font-family: headerFont;
+  src: url('../vendor/ITCFranklinGothicStd-Book.otf');
+}
+@font-face {
+  font-family: subHeadingFont;
+  src: url('../vendor/ITCFranklinGothicStd-Med.otf');
+}
+
+  @font-face {
+    font-family: labelFont;
+    src: url('../vendor/ITCFranklinGothicStd-BkCd.otf');
+  }
+
+body {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: @top-margin @outer-padding 0 @outer-padding;
+  // overflow: hidden;
+}
+
+#vis {
+  display: flex;
+  align-self: center;
+  rect {
+    fill: @background-dark;
+  }
+  font-size: 1.3em;
+
+  .header {
+    background-color: @background-light;
+    text-anchor: middle;
+    
+    .title-group {
+      text {
+        font-family: headerFont;
+        font-size: 1.4em;
+        fill: @heading;
+      }
+    }
+    .subtitle-group {
+      text {
+        font-family: subHeadingFont, 'Georgia';
+        font-size: 0.8em;
+        fill: @subheading;
+        font-weight: lighter;
+      }
+    }
+  }
+
+.domain {
+  display: none;
+}
+  .axis-group {
+    font-size: 0.9em;
+
+    text.label, {
+      font-family: labelFont, "Verdana";
+    }
+    text {
+      font-family: labelFont, "Verdana", sans-serif;
+      // color: @tick-label;
+    }
+    .tick {
+      fill: @heading;
+      font-size: @label-size;
+      font-weight: bold;
+
+      line {
+        stroke: @tick-color;
+        stroke-dasharray: 3px;
+      }
+    }
+  }
+}

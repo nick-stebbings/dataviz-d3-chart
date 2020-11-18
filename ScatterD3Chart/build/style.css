@@ -1,0 +1,64 @@
+@font-face {
+  font-family: headerFont;
+  src: url('../vendor/ITCFranklinGothicStd-Book.otf');
+}
+@font-face {
+  font-family: subHeadingFont;
+  src: url('../vendor/ITCFranklinGothicStd-Med.otf');
+}
+@font-face {
+  font-family: labelFont;
+  src: url('../vendor/ITCFranklinGothicStd-BkCd.otf');
+}
+body {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 12px 22px 0 22px;
+}
+#vis {
+  display: flex;
+  align-self: center;
+  font-size: 1.3em;
+}
+#vis rect {
+  fill: #EFECEA;
+}
+#vis .header {
+  background-color: #F5F3F2;
+  text-anchor: middle;
+}
+#vis .header .title-group text {
+  font-family: headerFont;
+  font-size: 1.4em;
+  fill: #635F5D;
+}
+#vis .header .subtitle-group text {
+  font-family: subHeadingFont, 'Georgia';
+  font-size: 0.8em;
+  fill: #8E8883;
+  font-weight: lighter;
+}
+#vis .domain {
+  display: none;
+}
+#vis .axis-group {
+  font-size: 0.9em;
+}
+#vis .axis-group text.label {
+  font-family: labelFont, "Verdana";
+}
+#vis .axis-group text {
+  font-family: labelFont, "Verdana", sans-serif;
+}
+#vis .axis-group .tick {
+  fill: #635F5D;
+  font-size: 12px;
+  font-weight: bold;
+}
+#vis .axis-group .tick line {
+  stroke: #8E8883;
+  stroke-dasharray: 3px;
+}
